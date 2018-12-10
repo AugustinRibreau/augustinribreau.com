@@ -558,6 +558,10 @@ footer {
   background-color: #efefef;
 }
 
+.reponsiv {
+  display: none;
+}
+
 @keyframes anim-1 {
   0%,
   8.3% {
