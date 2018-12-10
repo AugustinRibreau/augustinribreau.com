@@ -5,6 +5,7 @@
     <title>Augustin Ribreau</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -228,5 +229,9 @@
     <footer>
       <p>© Augustin Ribreau - All Rights Reserved.</p>
     </footer>
+    <div class="reponsiv">
+      <p>The mobile version is currently inaccessible</p>
+      <p>Augustin Ribreau</p>
+    </div>
   </body>
 </html>

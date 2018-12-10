@@ -621,3 +621,29 @@ footer {
     transform: translate3d(0, 100%, 0);
   }
 }
+
+@media (max-width: 1440px) {
+  header,
+  .First_zone,
+  #contenair,
+  .second_zone,
+  footer {
+    display: none;
+  }
+  .reponsiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+  .reponsiv p {
+    text-align: center;
+    color: #00e58a;
+    font-weight: bold;
+  }
+  .reponsiv p:last-child {
+    font-size: 1.5vh;
+  }
+}
