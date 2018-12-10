@@ -453,12 +453,8 @@ hr {
 
 .insta-row img {
   padding: 1px 1px 1px 1px;
-  height: 100%;
   width: 100%;
-}
-
-.img8 {
-  width: 33.35vw;
+  height: 100%;
 }
 
 .insta-row img:hover {
@@ -647,7 +643,10 @@ footer {
     color: #00e58a;
     font-weight: bold;
   }
-  .reponsiv p:last-child {
+  .reponsiv p:nth-child(2) {
+    font-size: 1.8vh;
+  }
+  .reponsiv p:nth-child(3) {
     font-size: 1.5vh;
   }
 }

@@ -171,7 +171,7 @@
             <a href="https://www.instagram.com/p/BmBQXcYlRj7plwdzi8gia69dbGiwVbnAE7r5pU0/" target="_blank">
               <img src="img/img7.jpg" alt="">
             </a>
-            <a class="img8" href="https://www.instagram.com/p/Bqnv4YGhqaZ4NLFDu5UwvqQnw6RZLryHjupjNM0/" target="_blank">
+            <a href="https://www.instagram.com/p/Bqnv4YGhqaZ4NLFDu5UwvqQnw6RZLryHjupjNM0/" target="_blank">
               <img src="img/img8.jpg" alt="">
             </a>
           </div>
@@ -230,7 +230,8 @@
       <p>© Augustin Ribreau - All Rights Reserved.</p>
     </footer>
     <div class="reponsiv">
-      <p>The mobile version is currently inaccessible</p>
+      <p>The mobile version is currently unavailable</p>
+      <p>Go to the computer</p>
       <p>Augustin Ribreau</p>
     </div>
   </body>
