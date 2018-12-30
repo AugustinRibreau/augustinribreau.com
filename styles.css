@@ -75,7 +75,7 @@ header a:hover:after {
   background-position: center;
   background-size: 100vw;
   background-repeat: no-repeat;
-  -webkit-filter: brightness(25%);
+  -webkit-filter: brightness(45%);
 }
 
 .First_zone div:last-child {

@@ -136,7 +136,7 @@
           <a class="item-1">"A life without principle is a boat <p>without</p> a rudder."
             <p class="autor">Gandhi</p>
           </a>
-          <a class="item-2">"That's not <p>untrue</p>."
+          <a class="item-2">"C'est pas <p>faux</p>."
             <p class="autor">Kaamelott</p>
           </a>
           <a class="item-3">"But you know, you can find <p>happiness</p> even in the darkest places.<br /> Just remember to turn on the <p>light</p>."
@@ -178,7 +178,7 @@
         </div>
       </div>
       <div id="contact">
-        <p class="text">Contact Us</p>
+        <p class="text">Contact Me</p>
         <div class="contact-box">
     			<form method="post">
             <a>
