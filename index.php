@@ -36,7 +36,7 @@
             </tr>
             <tr>
               <td>E-MAIL :</td>
-              <td><a href="mailto:augustin.ribreau@gmail.com">augustin.ribreau@gmail.com</a></td>
+              <td><a href="mailto:augustin@ribreau.co">augustin@ribreau.co</a></td>
             </tr>
             <tr>
               <td>PHONE :</td>
