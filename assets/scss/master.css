@@ -10,6 +10,9 @@
   overflow-x: hidden;
 }
 
+body {
+  overflow: hidden;
+}
 .section__text {
   text-align: center;
   font-family: "Open Sans", sans-serif;
