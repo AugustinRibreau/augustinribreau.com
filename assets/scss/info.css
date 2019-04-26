@@ -1,0 +1,25 @@
+.section__container--info {
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info__text {
+  text-align: center;
+  font-weight: normal;
+  font-size: 3vh;
+}
+
+.info__text p {
+  color: #66b3ff;
+  display: inline;
+}
+
+.info__img--rounded {
+  margin-bottom: 5vh;
+  height: 40vh;
+  border-radius: 50%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}

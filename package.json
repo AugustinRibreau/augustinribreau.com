@@ -1,0 +1,33 @@
+{
+  "name": "newaugustinribreau",
+  "description": "augustin ribreau",
+  "version": "1.0.0",
+  "main": "",
+  "dependencies": {
+    "animate-sass": "^0.8.2",
+    "animate.css": "^3.6.1",
+    "build": "^0.1.4",
+    "domready": "^1.0.8",
+    "sass-google-fonts": "^1.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.17.3"
+  },
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html",
+    "postinstall": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AugustinRibreau/Naugustin.ribreau.co.git"
+  },
+  "author": "Augustin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AugustinRibreau/Naugustin.ribreau.co/issues"
+  },
+  "homepage": "https://github.com/AugustinRibreau/Naugustin.ribreau.co#readme"
+}

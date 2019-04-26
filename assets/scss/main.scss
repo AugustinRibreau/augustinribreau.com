@@ -1,0 +1,12 @@
+// @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css";
+
+$use-fadeIn: true;
+$use-flipInY: true;
+@import "~animate-sass/_animate";
+@import "animate";
+@import "header";
+@import "instagram";
+@import "info";
+@import "master";
+@import "responsive";
+@import "skills";

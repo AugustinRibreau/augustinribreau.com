@@ -1,7 +1,0 @@
-{
-    "name": "augustin/websitenew",
-    "type": "project",
-    "require": {
-        "sendgrid/sendgrid": "^7.2"
-    }
-}

@@ -1,0 +1,23 @@
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-3vh);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float_arrow {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-1vh);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
