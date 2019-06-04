@@ -16,9 +16,9 @@
     "sass": "^1.17.3"
   },
   "scripts": {
-    "start": "parcel serve index.html",
-    "build": "parcel build index.html",
-    "postinstall": "npm run build"
+    "start:dev": "parcel serve index.html",
+    "build:dev": "parcel build index.html",
+    "postinstall": "npm run build:dev"
   },
   "repository": {
     "type": "git",
