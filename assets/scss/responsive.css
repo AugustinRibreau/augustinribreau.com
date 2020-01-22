@@ -1,49 +1,8 @@
 @media (max-width: 1024px) {
-  .section__container--skill {
-    justify-content: space-around;
-  }
-
-  .skill__container {
-    flex-direction: column;
-    align-items: center;
-    height: 90vh;
-    width: 100vw;
-  }
-  .skill__container--column {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 70vw;
-  }
-  .skill__line {
-    width: 14vw;
-  }
-  .skill__text--area {
-    font-size: 1vh;
-  }
 }
 
 @media (max-width: 768px) {
-  .logo__img {
-    height: 10vh;
-    filter: grayscale(0%);
-  }
-  .contact__info {
-    width: 80%;
-  }
-  .skill__container--column {
-    width: 100%;
-  }
-  .skill__line {
-    height: 30vh;
-  }
 }
 
 @media (max-width: 320px) {
-  .header__text--f_title {
-    font-size: 6vh;
-  }
-  .info__img--rounded {
-    height: 35vh;
-  }
 }

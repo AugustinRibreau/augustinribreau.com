@@ -4,17 +4,8 @@
   margin: 0;
 }
 
-.main {
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow-x: hidden;
+body {
 }
 
-body {
-  overflow: hidden;
-}
-.section__text {
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  color: #323a45;
+.main {
 }
