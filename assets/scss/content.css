@@ -34,6 +34,10 @@
   height: 100%;
   width: 50%;
 }
+.me {
+  margin-top: 40px;
+  height: 600px;
+}
 
 .rightSection {
   width: 5%;
