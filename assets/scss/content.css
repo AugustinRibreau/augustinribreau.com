@@ -1,0 +1,59 @@
+.content {
+  height: 88%;
+  width: 100%;
+  font-family: "Philosopher", sans-serif;
+}
+
+.leftSection {
+  width: 2.5%;
+  height: 100%;
+}
+
+.leftSectionTexteVertical {
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+.leftSectionTexteVertical:hover {
+  color: #d42b2b !important;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.centerSection {
+  width: 92.5%;
+  height: 100%;
+}
+
+.centerLeftSection {
+  padding: 10% 0 10% 10%;
+  height: 100%;
+  width: 50%;
+}
+
+.centerRightSection {
+  height: 100%;
+  width: 50%;
+}
+
+.rightSection {
+  width: 5%;
+  height: 100%;
+}
+
+.rightSection i {
+  font-size: 4vh;
+  padding: 8px 0 8px 0;
+  transition: 0.5s;
+}
+.rightSection i:hover {
+  color: #d42b2b !important;
+  transition: 0.5s;
+}
+
+.textName {
+  font-size: 8vh;
+}
+
+.textDescription {
+  padding-right: 10%;
+}
