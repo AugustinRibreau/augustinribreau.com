@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Augustin Ribreau</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Philosopher|Roboto&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
       rel="stylesheet"
     />
     <link
@@ -15,7 +15,6 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="assets/scss/main.scss" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script
@@ -34,116 +33,197 @@
   </head>
   <body>
     <div class="main">
-      <nav class="testLeftPosition navbar navbar-expand-lg navbar-dark bg-dark">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarColor02"
-          aria-controls="navbarColor02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="" id="navbarColor02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link redColor" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link greyColor" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link greyColor" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link greyColor" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link greyColor" href="#">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link greyColor" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div
-        class="content d-flex justify-content-center align-items-center greyColor"
-      >
-        <div
-          class="leftSection d-flex justify-content-center align-items-center"
-        >
-          <a
-            class="leftSectionTexteVertical greyColor"
-            href="mailto:augustin@ribreau.co"
-            >augustin@ribreau.co</a
+      <div class="content-mbp16">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </div>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="listOfMenuLink" id="navbarSupportedContent">
+            <ul class="contentListOfMenuLink navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#competence">Competence</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" href="https://cv.augustin.ribreau.co" class="nav-link">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div
-          class="centerSection d-flex justify-content-center align-items-center"
+        id="home"
+          class="sectionFirstPage d-flex justify-content-center align-items-center flex-column"
         >
-          <div class="centerLeftSection">
-            <p class="redColor">I am</p>
-            <p class="textName greyColor">Augustin Ribreau</p>
-            <p class="redColor">Developer - Student - Hacker</p>
-            <p class="textDescription">
-              Cheers !<br />
-              I'm Augustin Ribreau<br />
-              I am currently in my second year at EPSI, an engineering school in
-              NANTES.<br />
-              I learn different programming languages as well as notions of
-              system and network administration.<br />
-              Here are some information about myself below.<br />
+          <p class="welcomeText">Welcome !</p>
+          <p class="nameText">I'm <a class="typewrite" data-period="4000" data-type='[ "Augustin Ribreau.", "Developer.", "Junior Hacker.", "Student." ]'>
+          <span class="wrap"></span></p>
+          <p class="infoText">HACKER - DEVELOPER - STUDENT</p>
+          <a href="#about">
+            <i class="fas fa-angle-double-down"></i>
+          </a>
+        </div>
+        <div id="about" class="aboutSection d-flex f-row">
+          <div class="about__leftSize d-flex justify-content-center align-items-end about__Size">
+            <img class="me" src="assets/img/FacebookPhotoProfile.png" alt="me">
+          </div>
+          <div class="about__rightSize about__Size d-flex justify-content-center flex-column">
+            <p class="aboutText myNameIsText">My name is <b>Augustin Ribreau</b>.</p>
+            <p class="aboutText resumeMeText">I'm a student and a freelancer</p>
+            <p class="aboutText aboutInformationText">
+              I am a second year engineering school student (EPSI).
+              I learn different programming languages as well as notions of system and network administration.
+              I am passionate about web development.
             </p>
-          </div>
-          <div
-            class="centerRightSection  d-flex justify-content-center align-items-center"
-          >
-            <img class="me" src="assets/img/me.png" alt="" />
-          </div>
-        </div>
-        <div
-          class="rightSection d-flex justify-content-center align-items-center flex-column"
-        >
-          <div class="d-flex align-items-center flex-column">
-            <a
-              class="d-flex justify-content-center align-items-center flex-row-reverse"
-              href="https://www.instagram.com/augustin.rib/?hl=fr"
-              target="_blank"
-              ><i class="fab fa-instagram greyColor"></i>
-            </a>
-            <a href="https://www.facebook.com/AugustinRib" target="_blank"
-              ><i class="fab fa-facebook-square greyColor"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/augustinribreau/"
-              target="_blank"
-              ><i class="fab fa-linkedin greyColor"></i
-            ></a>
-            <a href="https://github.com/AugustinRibreau" target="_blank"
-              ><i class="fab fa-github-alt greyColor"></i
-            ></a>
-            <a href="https://gitlab.com/AugustinRibreau" target="_blank"
-              ><i class="fab fa-gitlab greyColor"></i
-            ></a>
+            <div class="sectionLineInfo d-flex justify-content-start align-items-start flex-column">
+              <table class="aboutTable">
+                <tr>
+                    <td>Full Name</td>
+                    <td>:</td>
+                    <td>Mr. Augustin Ribreau</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>:</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td>Nantes / Vendée</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><a target="_blank" href="mailto:augustin@ribreau.co">augustin@ribreau.co</a></td>
+                </tr>
+                <tr>
+                    <td>Available</td>
+                    <td><i class="fas fa-arrow-right"></i></td>
+                    <td><i class="far fa-check-circle"></i></td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="footer d-flex justify-content-center align-items-center greyColor"
-      >
-        © Augustin Ribreau - All Rights Reserved.
+        <div id="competence" class="competenceSection d-flex justify-content-center align-items-end">
+          <div class="competenceContent d-flex justify-content-center align-items-center flex-column">
+            <div class="competence d-flex justify-content-between align-items-center flex-row">
+              <i class="fas fa-code"></i><p>PHP7 - Javascript - HMTL5 - CSS3 - SQL - C# - C - C++</p>
+            </div><br><br>
+            <div class="competence d-flex justify-content-between align-items-center flex-row">
+              <i class="fas fa-terminal"></i><p>Debian - CentOS - Pfsense - ArchLinux - Raspbian - Kali Linux - Ubuntu - Windows - Mac</p>
+            </div><br><br>
+            <div class="competence d-flex justify-content-between align-items-center flex-row">
+              <i class="fas fa-database"></i><p>MySql - MongoDB - InnoDB</p>
+            </div><br><br>
+            <div class="competence d-flex justify-content-between align-items-center flex-row">
+              <i class="fas fa-network-wired"></i><p>Serveur BDD - Serveur Web - FireWall - SSH</p>
+            </div>
+          </div>
+        </div>
+        <div id="work" class="workSection d-flex justify-content-center align-items-end">
+          <div class="workContent">
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active" id="list-mobileApplicationSpotify" data-toggle="list" href="#mobileApplicationSpotify" role="tab" aria-controls="mobileApplicationSpotify">Mobile Application</a>
+                  <a class="list-group-item list-group-item-action" id="list-IfroceanBackend" data-toggle="list" href="#IfroceanBackend" role="tab" aria-controls="IfroceanBackend">Ifrocean Backend</a>
+                  <a class="list-group-item list-group-item-action" id="list-cv" data-toggle="list" href="#cv" role="tab" aria-controls="cv">Curriculum vitæ</a>
+                  <a class="list-group-item list-group-item-action" id="list-convention" data-toggle="list" href="#convention" role="tab" aria-controls="convention">Convention</a>
+                  <a class="list-group-item list-group-item-action" id="list-nobullshit" data-toggle="list" href="#nobullshit" role="tab" aria-controls="nobullshit">NoBullShit Website</a>
+                  <a class="list-group-item list-group-item-action" id="list-minesweeper" data-toggle="list" href="#minesweeper" role="tab" aria-controls="minesweeper">JS Minesweeper</a>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="mobileApplicationSpotify" role="tabpanel" aria-labelledby="list-mobileApplicationSpotify">
+                    <p>This repository contains the code of the MobileApp project. Realized in 2019 during the second year of EPSI engineering school.<br>
+                        The application is a simple spotify player whose lyrics come from the MusixMatch API.<br>
+                        Developed in kotlin.<br><br>
+                        Repository :
+                    <a target="_blank" href="https://github.com/AugustinRibreau/B2_ApplicationMobile">Github</a></p>
+                  </div>
+                  <div class="tab-pane fade" id="IfroceanBackend" role="tabpanel" aria-labelledby="list-IfroceanBackend">
+                    <p>
+                      This repository contains the code of the C# project. Realized in 2019 for the BTS. This is the backend part.<br>
+                      Ifrocean is a software allowing the student to enter values in a database.<br>
+                      Developed in C#. <br><br>
+                      Repository :
+                    <a target="_blank" href="https://github.com/AugustinRibreau/B2_IfroceanCsharp">Github</a></p>
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="list-cv">
+                    <p>Creation of a website illustrating my CV for fun.<br>
+                    Developed in HTML5, CSS3, JS. <br><br>
+                    Repository :
+                  <a target="_blank" href="https://github.com/AugustinRibreau/CV">Github</a></p>
+                  </div>
+                  <div class="tab-pane fade" id="convention" role="tabpanel" aria-labelledby="list-convention">
+                    <p>
+                      Write several conventions to create a strict work environment. <br>
+                      Thanks to this, projects are developed in the same way and understandable by all.<br>
+                    </p>
+                    Repository :
+                    <ul>
+                      <li>Commits : <a target="_blank" href="https://github.com/AugustinRibreau/Convention-Commits">Github</a></li>
+                      <li>README : <a target="_blank" href="https://github.com/AugustinRibreau/README-Template.md">Github</a></li>
+                      <li>SQL : <a target="_blank" href="https://github.com/AugustinRibreau/Convention-SQL">Github</a></li>
+                      <li>BEM : <a target="_blank" href="https://github.com/AugustinRibreau/Convention-BEM">Github</a></li>
+                      <li>Emmet : <a target="_blank" href="https://github.com/AugustinRibreau/Emmet">Github</a></li>
+                      <li>.gitignore : <a target="_blank" href="https://github.com/AugustinRibreau/.gitignore-Template">Github</a></li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="nobullshit" role="tabpanel" aria-labelledby="list-nobullshit">
+                    <p>
+                      Co-integrator of the getnobullshit site from a graphic model developed on Zeplin. <br>
+                      Developed in HTML5, CSS3 and Javascript.<br><br>
+                      Repository :
+                      <a target="_blank" href="https://github.com/nobullshitbooks/nobullshit-website">Github</a><br>
+                      Website :
+                      <a target="_blank" href="https://getnobullshit.com/">GetNoBullShit</a></p>
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="minesweeper" role="tabpanel" aria-labelledby="list-minesweeper">
+                    <p>
+                      This directory contains the code of a second year higher education exercise.<br>
+                      He is a deminer. First developed in NodeJs (in console). Then a graphical interface (or front end) was connected allowing a better use of the game.<br>
+                      Developed in NodeJs, Javascript with VueJS.<br><br>
+                      Repository :
+                      <a target="_blank" href="https://github.com/AugustinRibreau/JS_demineur">Github</a><br>
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="contactSection">
+          <div class="contactContent">
+
+          </div>
+        </div>
       </div>
     </div>
-    <link
-      rel="stylesheet"
-      href="https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css"
-      media="all"
-    />
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -159,7 +239,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://kit.fontawesome.com/989f89614e.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js" charset="utf-8"></script>
   </body>
 </html>

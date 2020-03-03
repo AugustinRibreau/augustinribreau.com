@@ -1,7 +1,19 @@
-.redColor {
-  color: #d42b2b !important;
+p {
+  font-family: "Roboto";
 }
 
-.greyColor {
-  color: #cccccc !important;
+.fa-angle-double-down {
+  position: relative;
+  color: #8c8c8c;
+  top: 150px;
+  font-size: 35px;
+  animation: top-down 1s ease-in-out infinite;
+}
+
+.fa-check-circle {
+  color: #00e600;
+}
+
+.fa-arrow-right {
+  animation: right-left 2s ease-in-out infinite;
 }

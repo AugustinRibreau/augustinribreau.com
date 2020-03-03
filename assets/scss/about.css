@@ -1,0 +1,67 @@
+.aboutSection {
+  height: 100%;
+  width: 100%;
+}
+
+.about__Size {
+  height: 100%;
+}
+.about__leftSize {
+  width: 35%;
+}
+.about__rightSize {
+  width: 65%;
+  padding: 30px 50px 30px 50px;
+}
+
+.me {
+  height: 92%;
+}
+
+.aboutText {
+  line-height: 25px;
+}
+
+.myNameIsText {
+  color: #404040;
+  font-size: 15px;
+}
+
+.resumeMeText {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.aboutInformationText {
+  padding-top: 10px;
+  color: #737373;
+  font-size: 15px;
+}
+
+.sectionLineInfo {
+  width: 100%;
+}
+
+.about__lineInfo {
+  width: 50%;
+}
+
+.aboutTable td:nth-child(1),
+.aboutTable td:nth-child(2) {
+  font-weight: bold;
+}
+.aboutTable td:nth-child(3) {
+  text-align: left;
+}
+
+.aboutTable {
+  width: 50%;
+  text-align: center;
+}
+
+.aboutTable td {
+  min-width: 40px;
+}
+.aboutTable tr {
+  height: 50px;
+}
