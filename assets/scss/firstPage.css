@@ -12,10 +12,12 @@
   color: #8c8c8c;
   line-height: 25px;
   font-size: 30px;
+  text-align: center;
 }
 
 .nameText {
   font-size: 100px;
+  text-align: center;
 }
 
 .nameText a {
