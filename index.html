@@ -3,185 +3,263 @@
   <head>
     <meta name="author" content="Augustin Ribreau" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Augustin Ribreau</title>
-    <link rel="stylesheet" href="assets/scss/main.scss" />
-    <link rel="shortcut icon" href="assets/favicon.jpg" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/scss/main.scss" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133942155-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-133942155-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-133942155-1');
+      gtag("config", "UA-133942155-1");
     </script>
   </head>
   <body>
     <div class="main">
-      <section class="section__container section__container--header">
-        <div class="header__container">
-          <div class="header__area">
-            <h1
-              class="section__text section__text--animated fadeIn header__text--f_title"
-            >
-              AUGUSTIN RIBREAU
-            </h1>
-            <p
-              class="section__text section__text--animated fadeIn header__text--s_title"
-            >
-              Developer, Student
+      <div class="content-mbp16">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="listOfMenuLink collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="contentListOfMenuLink navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#competence">Competence</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="veille-techno.html">Veille-techno</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" href="https://cv.augustin.ribreau.co" class="nav-link">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div
+        id="home"
+          class="sectionFirstPage d-flex justify-content-center align-items-center flex-column"
+        >
+          <p class="welcomeText">Welcome !</p>
+          <p class="nameText">I'm <a class="typewrite" data-period="4000" data-type='[ "Augustin Ribreau.", "Developer.", "Junior Hacker.", "Student." ]'>
+          <span class="wrap"></span></p>
+          <p class="infoText">HACKER - DEVELOPER - STUDENT</p>
+          <a href="#about">
+            <i class="fas fa-angle-double-down"></i>
+          </a>
+        </div>
+        <div id="about" class="aboutSection d-flex f-row">
+          <div class="about__leftSize d-flex justify-content-center align-items-end about__Size">
+            <img class="me" src="assets/img/FacebookPhotoProfile.png" alt="me">
+          </div>
+          <div class="about__rightSize about__Size d-flex justify-content-center flex-column">
+            <p class="aboutText myNameIsText">My name is <b>Augustin Ribreau</b>.</p>
+            <p class="aboutText resumeMeText">I'm a student and a freelancer</p>
+            <p class="aboutText aboutInformationText">
+              I am a second year engineering school student (EPSI).
+              I learn different programming languages as well as notions of system and network administration.
+              I am passionate about web development.
             </p>
+            <div class="sectionLineInfo d-flex justify-content-start align-items-start flex-column">
+              <table class="aboutTable">
+                <tr>
+                    <td>Full Name</td>
+                    <td>:</td>
+                    <td>Mr. Augustin Ribreau</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>:</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>:</td>
+                    <td>Nantes / Vendée</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><a target="_blank" href="mailto:augustin@ribreau.co">augustin@ribreau.co</a></td>
+                </tr>
+                <tr>
+                    <td>Available</td>
+                    <td><i class="fas fa-arrow-right"></i></td>
+                    <td><i class="far fa-check-circle"></i></td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="arrow__container">
-          <img class="arrow_img" src="assets/img/angle-down.svg" alt="fleche" />
+        <div id="competence" class="competenceSection d-flex justify-content-center align-items-end">
+          <div class="competenceContent d-flex justify-content-center align-items-center flex-column">
+            <div class="competence d-flex justify-content-between align-items-center flex-row">
+              <i class="fas fa-code"></i><p>PHP7 - Javascript - HMTL5 - CSS3 - SQL - C# - C - C++</p>
+            </div><br><br>
+            <div class="competence d-flex justify-content-between align-items-center flex-row">
+              <i class="fas fa-terminal"></i><p>Debian - CentOS - Pfsense - ArchLinux - Raspbian - Kali Linux - Ubuntu - Windows - Mac</p>
+            </div><br><br>
+            <div class="competence d-flex justify-content-between align-items-center flex-row">
+              <i class="fas fa-database"></i><p>MySql - MongoDB - InnoDB</p>
+            </div><br><br>
+            <div class="competence d-flex justify-content-between align-items-center flex-row">
+              <i class="fas fa-network-wired"></i><p>Serveur BDD - Serveur Web - FireWall - SSH</p>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- INFO -->
-      <section class="section__container section__container--info">
-        <img
-          class="info__img--rounded"
-          src="assets/img/me.jpg"
-          alt="Augustin"
-        />
-        <div class="section__text info__text">
-          Cheers ! <br />
-          I'm
-          <p>Augustin Ribreau</p>
-          <br />
-          I am currently in my first year at EPSI, an engineering school in
-          NANTES. <br />
-          I learn
-          <p>different programming</p>
-          languages as well as notions of
-          <p>system and network administration.</p>
-          <br />
-          Here are some information about
-          <p>myself</p>
-          below.
+        <div id="work" class="workSection d-flex justify-content-center align-items-end">
+          <div class="workContent">
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active" id="list-mobileApplicationSpotify" data-toggle="list" href="#mobileApplicationSpotify" role="tab" aria-controls="mobileApplicationSpotify">Mobile Application</a>
+                  <a class="list-group-item list-group-item-action" id="list-IfroceanBackend" data-toggle="list" href="#IfroceanBackend" role="tab" aria-controls="IfroceanBackend">Ifrocean Backend</a>
+                  <a class="list-group-item list-group-item-action" id="list-cv" data-toggle="list" href="#cv" role="tab" aria-controls="cv">Curriculum vitæ</a>
+                  <a class="list-group-item list-group-item-action" id="list-convention" data-toggle="list" href="#convention" role="tab" aria-controls="convention">Convention</a>
+                  <a class="list-group-item list-group-item-action" id="list-nobullshit" data-toggle="list" href="#nobullshit" role="tab" aria-controls="nobullshit">NoBullShit Website</a>
+                  <a class="list-group-item list-group-item-action" id="list-minesweeper" data-toggle="list" href="#minesweeper" role="tab" aria-controls="minesweeper">JS Minesweeper</a>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="mobileApplicationSpotify" role="tabpanel" aria-labelledby="list-mobileApplicationSpotify">
+                    <p>This repository contains the code of the MobileApp project. Realized in 2019 during the second year of EPSI engineering school.<br>
+                        The application is a simple spotify player whose lyrics come from the MusixMatch API.<br>
+                        Developed in kotlin.<br><br>
+                        Repository :
+                    <a target="_blank" href="https://github.com/AugustinRibreau/B2_ApplicationMobile">Github</a></p>
+                  </div>
+                  <div class="tab-pane fade" id="IfroceanBackend" role="tabpanel" aria-labelledby="list-IfroceanBackend">
+                    <p>
+                      This repository contains the code of the C# project. Realized in 2019 for the BTS. This is the backend part.<br>
+                      Ifrocean is a software allowing the student to enter values in a database.<br>
+                      Developed in C#. <br><br>
+                      Repository :
+                    <a target="_blank" href="https://github.com/AugustinRibreau/B2_IfroceanCsharp">Github</a></p>
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="list-cv">
+                    <p>Creation of a website illustrating my CV for fun.<br>
+                    Developed in HTML5, CSS3, JS. <br><br>
+                    Repository :
+                  <a target="_blank" href="https://github.com/AugustinRibreau/CV">Github</a></p>
+                  </div>
+                  <div class="tab-pane fade" id="convention" role="tabpanel" aria-labelledby="list-convention">
+                    <p>
+                      Write several conventions to create a strict work environment. <br>
+                      Thanks to this, projects are developed in the same way and understandable by all.<br>
+                    </p>
+                    Repository :
+                    <ul>
+                      <li>Commits : <a target="_blank" href="https://github.com/AugustinRibreau/Convention-Commits">Github</a></li>
+                      <li>README : <a target="_blank" href="https://github.com/AugustinRibreau/README-Template.md">Github</a></li>
+                      <li>SQL : <a target="_blank" href="https://github.com/AugustinRibreau/Convention-SQL">Github</a></li>
+                      <li>BEM : <a target="_blank" href="https://github.com/AugustinRibreau/Convention-BEM">Github</a></li>
+                      <li>Emmet : <a target="_blank" href="https://github.com/AugustinRibreau/Emmet">Github</a></li>
+                      <li>.gitignore : <a target="_blank" href="https://github.com/AugustinRibreau/.gitignore-Template">Github</a></li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="nobullshit" role="tabpanel" aria-labelledby="list-nobullshit">
+                    <p>
+                      Co-integrator of the getnobullshit site from a graphic model developed on Zeplin. <br>
+                      Developed in HTML5, CSS3 and Javascript.<br><br>
+                      Repository :
+                      <a target="_blank" href="https://github.com/nobullshitbooks/nobullshit-website">Github</a><br>
+                      Website :
+                      <a target="_blank" href="https://getnobullshit.com/">GetNoBullShit</a></p>
+                    </p>
+                  </div>
+                  <div class="tab-pane fade" id="minesweeper" role="tabpanel" aria-labelledby="list-minesweeper">
+                    <p>
+                      This directory contains the code of a second year higher education exercise.<br>
+                      He is a deminer. First developed in NodeJs (in console). Then a graphical interface (or front end) was connected allowing a better use of the game.<br>
+                      Developed in NodeJs, Javascript with VueJS.<br><br>
+                      Repository :
+                      <a target="_blank" href="https://github.com/AugustinRibreau/JS_demineur">Github</a><br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </section>
-      <section class="section__container section__container--logo">
-        <div class="row">
-          <a href="https://www.facebook.com/AugustinRib" target="_blank">
-            <img
-              class="logo__img"
-              src="assets/img/logo/facebook.png"
-              alt="facebook"
-              id="toggler1"
-            />
-          </a>
-          <a href="https://www.instagram.com/augustin.rib/" target="_blank">
-            <img
-              class="logo__img"
-              src="assets/img/logo/instagram.png"
-              alt="instagram"
-              id="toggler2"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/augustinribreau/" target="_blank">
-            <img
-              class="logo__img"
-              src="assets/img/logo/linkedin.png"
-              alt="linkedin"
-              id="toggler3"
-            />
-          </a>
-          <a href="mailto:augustin@ribreau.co">
-            <img
-              class="logo__img"
-              src="assets/img/logo/gmail.png"
-              alt="gmail"
-              id="toggler4"
-            />
-          </a>
-          <img
-            class="logo__img"
-            src="assets/img/logo/whatsapp.png"
-            alt="whatsapp"
-            id="toggler5"
-          />
-          <a href="https://twitter.com/AugustinRibreau" target="_blank">
-              <img
-                class="logo__img"
-                src="assets/img/logo/twitter.png"
-                alt="twitter"
-                id="toggler6"
-              />
-          </a>
-          <img
-            class="logo__img"
-            src="assets/img/logo/spotify.png"
-            alt="spotify"
-            id="toggler7"
-          />
-          <img
-            class="logo__img"
-            src="assets/img/logo/slack.png"
-            alt="slack"
-            id="toggler8"
-          />
-          <a href="https://www.pinterest.fr/augustinribreau/" target="_blank">
-              <img
-                class="logo__img"
-                src="assets/img/logo/pinterest.png"
-                alt="pinterest"
-                id="toggler9"
-              />
-          </a>
-          <a href="https://www.messenger.com/t/AugustinRib" target="_blank">
-              <img
-                class="logo__img"
-                src="assets/img/logo/messenger.png"
-                alt="messenger"
-                id="toggler10"
-              />
-          </a>
-          <img
-            class="logo__img"
-            src="assets/img/logo/discord.png"
-            alt="discord"
-            id="toggler11"
-          />
-        </div>
-      </section>
-      <section class="section__container section__container--footer">
-        <div class="area__network">
-          <div class="contact__container">
+        <div id="contact" class="contactSection">
+          <div class="contactContent d-flex justify-content-center align-items-center flex-column">
             <div class="contact__title">
               <h1 class="section__text">Contact Me</h1>
-              <span><span></span></span>
             </div>
             <p class="section__text">Quick response: a few minutes to hours</p>
             <div class="contact__info">
-              <a class="section__text contact__text contact__text--lieu"
-                >📌 Nantes</a
-              >
               <a
+                target="_blank"
+                href="https://www.google.fr/maps/place/Nantes/@47.2383172,-1.6300956,12z/data=!3m1!4b1!4m5!3m4!1s0x4805ee81f0a8aead:0x40d37521e0ded30!8m2!3d47.218371!4d-1.553621"
+                class="section__text contact__text contact__text--lieu">📌 Nantes</a>
+              <a
+                target="_blank"
                 href="mailto:augustin@ribreau.co"
-                class="section__text contact__text"
-                >📨 augustin@ribreau.co
-              </a>
+                class="section__text contact__text">📨 augustin@ribreau.co</a>
               <a
+                target="_blank"
                 href="https://augustin.ribreau.co/"
-                class="section__text contact__text"
-                >🌍 augustin.ribreau.co
-              </a>
+                class="section__text contact__text">🌍 augustin.ribreau.co</a>
             </div>
           </div>
         </div>
-        <div class="area__copyright">
-          <p class="section__text">© Augustin Ribreau - All Rights Reserved.</p>
-        </div>
-      </section>
+      </div>
     </div>
-    <script src="assets/js/app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/989f89614e.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js" charset="utf-8"></script>
   </body>
 </html>

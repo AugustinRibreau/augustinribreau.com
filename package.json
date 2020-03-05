@@ -5,15 +5,15 @@
   "main": "",
   "dependencies": {
     "animate-sass": "^0.8.2",
-    "animate.css": "^3.6.1",
+    "animate.css": "^3.7.2",
     "build": "^0.1.4",
     "domready": "^1.0.8",
     "sass-google-fonts": "^1.0.1"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "parcel-bundler": "^1.12.3",
-    "sass": "^1.17.3"
+    "node-sass": "^4.13.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.6"
   },
   "scripts": {
     "start:dev": "parcel serve index.html",

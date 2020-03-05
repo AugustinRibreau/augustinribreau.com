@@ -1,13 +1,9 @@
-// @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css";
-
-$use-fadeIn: true;
-$use-flipInY: true;
-@import "~animate-sass/_animate";
 @import "animate";
-@import "footer";
-@import "header";
-@import "info";
-@import "logo";
 @import "master";
-@import "skills";
+@import "component";
+@import "firstPage";
+@import "about";
+@import "competence";
+@import "work";
+@import "contact";
 @import "responsive";
