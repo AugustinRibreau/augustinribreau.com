@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  transition: 0.5s;
+  scroll-behavior: smooth;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 6.944vw 3.333vw;
+}
+
+.nav {
+  padding: 3.333vw 0;
+}
+
+.nav p {
+  font-size: 15px;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.069vw;
+}
+
+.content p {
+  font-size: 10.417vw;
+  line-height: 1;
+  letter-spacing: 0;
+  transition: 0.25s;
+  vertical-align: baseline;
+  display: inline;
+}
+
+.upper-span {
+  margin-top: 1.736vw;
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.069vw;
+  color: inherit;
+  text-decoration: none;
+  width: 200px;
+}
+.upper-span:hover {
+  color: #d9d9d9;
+}
+
+textSelect {
+  cursor: pointer;
+  color: #d9d9d9;
+}
+
+.links ul li:not(:first-child) {
+  margin-left: 3.889vw;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+}
+
+.links a {
+  font-size: 30px;
+  transition: 0.2s !important;
+  color: inherit;
+}
+
+.links a:hover {
+  transition: 0.2s !important;
+  cursor: pointer;
+  color: #d9d9d9;
+}
+
+.colorGreyTitle {
+  color: #202121;
+}
+
+.colorChange {
+  color: white;
+}
+
+.backgroundBlack {
+  background: black;
+}

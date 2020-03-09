@@ -1,0 +1,26 @@
+/* Laptop L */
+@media (max-width: 1440px) {
+}
+
+/* Before Laptop */
+@media (max-width: 1024px) {
+}
+
+/* Tablette */
+@media (max-width: 766px) {
+  .main {
+    height: 80vh;
+  }
+}
+
+/* Mobile L */
+@media (max-width: 425px) {
+}
+
+/* Mobile M */
+@media (max-width: 375px) {
+}
+
+/* Mobile S */
+@media (max-width: 320px) {
+}
