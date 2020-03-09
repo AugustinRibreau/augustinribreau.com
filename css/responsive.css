@@ -8,6 +8,9 @@
 
 /* Tablette */
 @media (max-width: 766px) {
+  .main {
+    height: 80vh;
+  }
 }
 
 /* Mobile L */
