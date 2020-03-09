@@ -11,6 +11,9 @@
   .main {
     height: 80vh;
   }
+  .vt-main {
+    width: 100%;
+  }
 }
 
 /* Mobile L */
