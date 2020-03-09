@@ -3,41 +3,84 @@
   <head>
     <meta charset="utf-8" />
     <title>Augustin Ribreau</title>
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/male-technologist-type-1-2_1f468-1f3fb-200d-1f4bb.png">
     <link rel="stylesheet" href="css/main.scss" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-133942155-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-133942155-1");
+    </script>
   </head>
   <body>
-    <div id="buttonArea" class="buttonArea">
-      <p>Click !</p>
-      <div class="outer-circle">
-        <div id="inner-circle-button" class="inner-circle"></div>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div id="main" class="main rainbow_border">
-      <div class="content">
-        <img
-          class="facebookPhotoProfile"
-          src="img/FacebookPhotoProfile.png"
-          alt=""
-        />
-        <div class="contentRightSize">
-          <section class="presentation">
-            <div class="contentAreaTextPresentation">
-              <p class="welcomeText">Welcome !</p>
-              <p class="nameText">
-                I'm <nameColorTitle>Augustin Ribreau !</nameColorTitle>
-              </p>
-              <p class="descriptionText">
-                Junior Hacker - Web Developer - Student
-              </p>
-            </div>
-          </section>
+    <div class="main" id="main">
+      <div class="wrapper">
+        <div class="nav">
+          <p id="navText" >Web Developer - Junior Hacker - Student</p>
+        </div>
+        <div class="content">
+          <p>
+            <textSelect id="helloText">Bonjour,</textSelect>
+            <p id="textChangeColor">
+            I am Augustin Ribreau
+            </p>
+          </p>
+          <a id="textEmailColor" href="mailto:augustin@ribreau.co" class="upper-span"
+            >augustin@ribreau.co</a
+          >
+        </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="https://twitter.com/Augustinrib" target="_blank"
+                ><i id="linksTextTwitter" class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/augustinribreau/"
+                target="_blank"
+                ><i id="linksTextLinkedin" class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/AugustinRibreau" target="_blank"
+                ><i id="linksTextGithub" class="fab fa-github-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/augustin.rib/?hl=fr"
+                target="_blank"
+                ><i id="linksTextInstagram" class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://cv.augustin.ribreau.co/" target="_blank"
+                ><i id="linksTextCV" class="fas fa-address-card"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/989f89614e.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

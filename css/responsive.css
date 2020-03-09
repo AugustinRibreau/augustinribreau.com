@@ -4,25 +4,10 @@
 
 /* Before Laptop */
 @media (max-width: 1024px) {
-  .content {
-    flex-direction: column;
-  }
-  .contentRightSize {
-    width: 100%;
-  }
-  .facebookPhotoProfile {
-    display: none;
-  }
-  .contentAreaTextPresentation {
-    padding: 0px;
-  }
 }
 
 /* Tablette */
 @media (max-width: 766px) {
-  .contentRightSize {
-    margin: 0;
-  }
 }
 
 /* Mobile L */
