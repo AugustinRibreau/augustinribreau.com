@@ -1,18 +1,18 @@
 # augustin.ribreau.co
 
-## Step 1 : clone
+## 1️⃣ : clone
 ```bash
 git clone https://github.com/AugustinRibreau/augustin.ribreau.co.git
 ```
 
-## Step 2 : build
+## 2️⃣ : build
 ###### with parceljs ❤️
 ```bash
 npm install
 npm run build
 ```
 
-## Step 3 : start
+## 3️⃣ : start
 ```bash
 npm run start:dev
 ```
