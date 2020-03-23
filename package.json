@@ -16,7 +16,8 @@
     "sass": "^1.23.6"
   },
   "scripts": {
-    "start:dev": "parcel serve index.html",
+    "start:dev": "parcel server index.html",
+    "tech:dev": "parcel server veille-techno.html",
     "build:dev": "parcel build index.html",
     "postinstall": "npm run build:dev"
   },
