@@ -7,6 +7,7 @@ var linksTextGithub = document.getElementById("linksTextGithub");
 var linksTextInstagram = document.getElementById("linksTextInstagram");
 var linksTextCV = document.getElementById("linksTextCV");
 var linksTextTechno = document.getElementById("linksTextTechno");
+var btsTitle = document.getElementById("btsTitle");
 var textEmailColor = document.getElementById("textEmailColor");
 var main = document.getElementById("main");
 var click = 0;
@@ -22,6 +23,7 @@ helloText.addEventListener("click", function() {
     linksTextInstagram.classList.remove("colorChange");
     linksTextCV.classList.remove("colorChange");
     linksTextTechno.classList.remove("colorChange");
+    btsTitle.classList.remove("colorChange");
     textEmailColor.classList.remove("colorChange");
     helloText.classList.remove("colorGreyTitle");
     main.classList.remove("backgroundBlack");
@@ -34,6 +36,7 @@ helloText.addEventListener("click", function() {
     linksTextInstagram.classList.add("colorChange");
     linksTextCV.classList.add("colorChange");
     linksTextTechno.classList.add("colorChange");
+    btsTitle.classList.add("colorChange");
     textEmailColor.classList.add("colorChange");
     helloText.classList.add("colorGreyTitle");
     main.classList.add("backgroundBlack");

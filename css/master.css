@@ -93,3 +93,8 @@ textSelect {
 .backgroundBlack {
   background: black;
 }
+
+.btsLink {
+  text-decoration: none !important;
+  font-weight: 400;
+}
