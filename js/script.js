@@ -5,7 +5,6 @@ var linksTextTwitter = document.getElementById("linksTextTwitter");
 var linksTextLinkedin = document.getElementById("linksTextLinkedin");
 var linksTextGithub = document.getElementById("linksTextGithub");
 var linksTextInstagram = document.getElementById("linksTextInstagram");
-var linksTextCV = document.getElementById("linksTextCV");
 var linksTextTechno = document.getElementById("linksTextTechno");
 var btsTitle = document.getElementById("btsTitle");
 var textEmailColor = document.getElementById("textEmailColor");
@@ -21,7 +20,6 @@ helloText.addEventListener("click", function() {
     linksTextLinkedin.classList.remove("colorChange");
     linksTextGithub.classList.remove("colorChange");
     linksTextInstagram.classList.remove("colorChange");
-    linksTextCV.classList.remove("colorChange");
     linksTextTechno.classList.remove("colorChange");
     btsTitle.classList.remove("colorChange");
     textEmailColor.classList.remove("colorChange");
@@ -34,7 +32,6 @@ helloText.addEventListener("click", function() {
     linksTextLinkedin.classList.add("colorChange");
     linksTextGithub.classList.add("colorChange");
     linksTextInstagram.classList.add("colorChange");
-    linksTextCV.classList.add("colorChange");
     linksTextTechno.classList.add("colorChange");
     btsTitle.classList.add("colorChange");
     textEmailColor.classList.add("colorChange");
