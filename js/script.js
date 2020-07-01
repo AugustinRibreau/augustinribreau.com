@@ -11,30 +11,28 @@ var textEmailColor = document.getElementById("textEmailColor");
 var main = document.getElementById("main");
 var click = 0;
 
-helloText.addEventListener("click", function() {
+var allContent = [
+  textChangeColor,
+  navText,
+  linksTextTwitter,
+  linksTextLinkedin,
+  linksTextGithub,
+  linksTextInstagram,
+  textEmailColor,
+];
+
+helloText.addEventListener("click", function () {
   if (click == 1) {
     click = 0;
-    textChangeColor.classList.remove("colorChange");
-    navText.classList.remove("colorChange");
-    linksTextTwitter.classList.remove("colorChange");
-    linksTextLinkedin.classList.remove("colorChange");
-    linksTextGithub.classList.remove("colorChange");
-    linksTextInstagram.classList.remove("colorChange");
-    linksTextTechno.classList.remove("colorChange");
-    btsTitle.classList.remove("colorChange");
-    textEmailColor.classList.remove("colorChange");
+    for (var i = 0; i < allContent.length; i++) {
+      allContent[i].classList.remove("colorChange");
+    }
     helloText.classList.remove("colorGreyTitle");
     main.classList.remove("backgroundBlack");
   } else {
-    textChangeColor.classList.add("colorChange");
-    navText.classList.add("colorChange");
-    linksTextTwitter.classList.add("colorChange");
-    linksTextLinkedin.classList.add("colorChange");
-    linksTextGithub.classList.add("colorChange");
-    linksTextInstagram.classList.add("colorChange");
-    linksTextTechno.classList.add("colorChange");
-    btsTitle.classList.add("colorChange");
-    textEmailColor.classList.add("colorChange");
+    for (var i = 0; i < allContent.length; i++) {
+      allContent[i].classList.add("colorChange");
+    }
     helloText.classList.add("colorGreyTitle");
     main.classList.add("backgroundBlack");
     click = 1;

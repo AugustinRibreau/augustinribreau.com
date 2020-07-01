@@ -11,22 +11,22 @@ var fourDotSection = document.getElementById("fourDotSection");
 var fiveDotSection = document.getElementById("fiveDotSection");
 var obligatoryDotSection = document.getElementById("obligatoryDotSection");
 
-oneDotButton.addEventListener("click", function() {
+oneDotButton.addEventListener("click", function () {
   display(oneDotSection);
 });
-twoDotButton.addEventListener("click", function() {
+twoDotButton.addEventListener("click", function () {
   display(twoDotSection);
 });
-treeDotButton.addEventListener("click", function() {
+treeDotButton.addEventListener("click", function () {
   display(treeDotSection);
 });
-fourDotButton.addEventListener("click", function() {
+fourDotButton.addEventListener("click", function () {
   display(fourDotSection);
 });
-fiveDotButton.addEventListener("click", function() {
+fiveDotButton.addEventListener("click", function () {
   display(fiveDotSection);
 });
-obligatoryDotButton.addEventListener("click", function() {
+obligatoryDotButton.addEventListener("click", function () {
   display(obligatoryDotSection);
 });
 
