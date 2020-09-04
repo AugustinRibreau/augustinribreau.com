@@ -11,7 +11,7 @@
     "sass-google-fonts": "^1.0.1"
   },
   "devDependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.23.6"
   },
