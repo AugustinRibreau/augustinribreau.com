@@ -1,0 +1,47 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  animation: slice_home 1s 1.75s forwards;
+}
+
+.home p {
+  font-weight: 200;
+  font-size: 10vh;
+  color: white;
+  animation-fill-mode: forwards;
+  margin: 0 20px;
+}
+
+.home hr {
+  border: 1px solid black;
+  width: 0%;
+  animation: slice_bar 1.5s 0.5s forwards;
+}
+
+@keyframes slice_bar {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    border: 1px solid white;
+    width: 50%;
+  }
+}
+
+@keyframes slice_home {
+  0% {
+    visibility: visible;
+    height: 100vh;
+  }
+
+  100% {
+    visibility: hidden;
+    height: 0vh;
+  }
+}

@@ -8,19 +8,19 @@
 
 /* Tablette */
 @media (max-width: 766px) {
-  .main {
-    height: 80vh;
-  }
-  .vt-main {
-    width: 100%;
-  }
-  .skills-main .btn-primary {
-    padding: 0px 10px;
+  .main__info {
+    width: 90%;
   }
 }
 
 /* Mobile L */
 @media (max-width: 425px) {
+  .text_undertitleMain {
+    font-size: 1.2rem;
+  }
+  .text_titleMain {
+    font-size: 3rem;
+  }
 }
 
 /* Mobile M */
