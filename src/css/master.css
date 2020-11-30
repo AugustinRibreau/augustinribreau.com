@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
 }
 body {
+  overflow: hidden;
   background: #f4f0ec;
 }
 .main {
