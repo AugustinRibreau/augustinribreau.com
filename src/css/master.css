@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background: #f4f0ec;
 }
 .main {
