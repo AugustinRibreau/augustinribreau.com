@@ -1,33 +1,28 @@
 {
   "name": "augustinribreau",
-  "description": "augustin ribreau",
   "version": "1.0.0",
-  "main": "",
+  "private": true,
+  "scripts": {
+    "serve": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:prettier",
+    "lintfix": "prettier --write --list-different ."
+  },
   "dependencies": {
-    "animate-sass": "^0.8.2",
-    "animate.css": "^3.7.2",
-    "build": "^0.1.4",
-    "domready": "^1.0.8",
-    "sass-google-fonts": "^1.0.1"
+    "animate.css": "^4.1.1",
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "tailwindcss": "^3.2.7",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.27.0"
-  },
-  "scripts": {
-    "start:dev": "npm run --silent clean && parcel serve src/index.html",
-    "clean": "rm -rf .cache dist",
-    "build:dev": "parcel build src/index.html",
-    "postinstall": "npm run build:dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AugustinRibreau/Naugustin.ribreau.co.git"
-  },
-  "author": "Augustin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AugustinRibreau/Naugustin.ribreau.co/issues"
-  },
-  "homepage": "https://github.com/AugustinRibreau/Naugustin.ribreau.co#readme"
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  }
 }
