@@ -162,7 +162,7 @@ export default {
   components: {TabResume, TabAbout, TabHome},
   data() {
     return {
-      currentNav: 3,
+      currentNav: 1,
       statusOfMenu: false,
     }
   },
