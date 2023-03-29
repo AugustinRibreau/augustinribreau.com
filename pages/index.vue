@@ -1,18 +1,18 @@
 <template>
   <div class="h-screen w-screen">
     <div
-      class="h-full w-full bg-gradient-to-br from-red-400 to-orange-400 flex justify-center md:py-5 items-start lg:items-center">
+      class="h-full w-full bg-gradient-to-br from-red-400 to-orange-400 flex justify-center lg:py-5 items-start lg:items-center">
       <div
-        class="z-50 w-full sm:w-11/12 lg:w-9/12 h-full lg:h-5/6 flex flex-col justify-start py-5 sm:py-0 sm:justify-center lg:flex-row px-2 xl:px-5 lg:p-0">
+        class="z-50 w-full lg:w-9/12 h-full lg:h-5/6 flex flex-col justify-start lg:py-5 sm:py-0 sm:justify-center lg:flex-row lg:px-2 xl:px-5 lg:p-0">
         <div
           @click="changeStateOfMenu()"
-          :class="`${statusOfMenu ? 'h-2/4' : 'h-1/6' } transition duration-500 bg-customGray-light rounded-t-[2.2rem] lg:rounded-none lg:rounded-l-[2.2rem] w-full lg:w-1/4 sm:h-1/4 md:h-1/3 lg:h-full flex flex-col sm:justify-between items-center lg:py-3 lg:pr-8`">
+          :class="`hidden lg:flex bg-customGray-light rounded-l-[2.2rem] w-1/4 h-full flex-col justify-between items-center py-3 pr-8`">
           <div
             class="w-full flex justify-center items-center flex-col sm:flex-row lg:flex-col py-10 lg:py-0 lg:pt-10 space-y-1 sm:space-x-4 md:space-x-8 lg:space-x-0 lg:space-y-8">
             <img src="../static/augustinribreau.jpeg" class="w-24 md:w-44 rounded-full border-2 border-gray-400" alt="">
             <div class="space-y-4 md:space-y-8 flex items-center flex-col">
               <div class="flex flex-col items-center">
-                <p class="font-bold text-gray-200 text-2xl">Augustin Ribreau</p>
+                <p class="font-bold text-gray-200 text-2xl text-center">Augustin Ribreau</p>
                 <p class="text-gray-300 font-light">Full Stack Developer</p>
               </div>
               <div class="flex flex-row space-x-3">
@@ -93,12 +93,12 @@
               </div>
             </div>
           </div>
-          <p class="hidden md:block text-xs text-gray-400 font-light">
+          <p class="hidden md:block text-xs text-gray-400 font-light text-center">
             © Since 2016 - Augustin Ribreau
           </p>
         </div>
         <div
-          :class="`${statusOfMenu ? 'h-2/4' : 'h-5/6' } transition duration-500 bg-customGray-default rounded-[2.2rem] -mt-8 lg:mt-0 lg:-ml-8 w-full lg:w-3/4 sm:h-3/4 md:h-2/3 lg:h-full flex`">
+          class="transition duration-500 bg-customGray-default lg:rounded-[2.2rem] lg:-ml-8 w-full lg:w-3/4 h-full flex">
           <transition class="w-full h-full flex justify-center items-center" name="tab-transition" mode="out-in">
             <div :key="currentNav" class="w-full h-full tab-container" v-if="currentNav === 1">
               <TabHome class="animate__animated animate__fadeIn"/>
@@ -114,27 +114,31 @@
           </transition>
         </div>
       </div>
-      <div class="hidden md:block z-50 w-16 py-4 h-full lg:h-5/6 mr-2 xl:mr-5 lg:mr-0">
-        <div
-          class="bg-customGray-extraLight md:bg-customGray-light w-full space-y-5 py-6 rounded-[3rem] flex flex-col items-center">
-          <svg @click="changeNav(1)"
-               :class="`${currentNav === 1 ? 'text-orange-400' : 'text-gray-400' } hover:text-orange-400 transition duration-200 cursor-pointer`"
-               width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M6 19h3v-6h6v6h3v-9l-6-4.5L6 10Zm0 2q-.825 0-1.412-.587Q4 19.825 4 19v-9q0-.475.213-.9q.212-.425.587-.7l6-4.5q.275-.2.575-.3q.3-.1.625-.1t.625.1q.3.1.575.3l6 4.5q.375.275.588.7q.212.425.212.9v9q0 .825-.587 1.413Q18.825 21 18 21h-5v-6h-2v6Zm6-8.75Z"/>
+      <div class="absolute right-5 top-5 lg:static z-50 w-16 lg:py-4 lg:h-full lg:h-5/6 lg:mr-2 xl:mr-5 lg:mr-0">
+        <div class="bg-customGray-light w-full py-4 rounded-[3rem] flex flex-col items-center">
+          <svg class="block lg:hidden text-orange-400 transition-all duration-500 cursor-pointer" @click="statusOfMenu = !statusOfMenu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="32" height="32">
+            <path stroke-linecap="round" stroke-linejoin="round" :d="`${statusOfMenu ? 'M6 18L18 6M6 6l12 12' : 'M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'}`" />
           </svg>
-          <svg @click="changeNav(2)"
-               :class="`${currentNav === 2 ? 'text-orange-400' : 'text-gray-400' } hover:text-orange-400 transition duration-200 cursor-pointer`"
-               width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm6 8H6q-.825 0-1.412-.587Q4 18.825 4 18v-.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2v.8q0 .825-.587 1.413Q18.825 20 18 20ZM6 18h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/>
-          </svg>
-          <svg @click="changeNav(3)"
-               :class="`${currentNav === 3 ? 'text-orange-400' : 'text-gray-400' } hover:text-orange-400 transition duration-200 cursor-pointer`"
-               width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M12 20.725q-.25 0-.488-.062q-.237-.063-.462-.188l-5-2.7q-.5-.275-.775-.737Q5 16.575 5 16v-4.8L2.6 9.875q-.275-.15-.4-.375T2.075 9q0-.275.125-.5q.125-.225.4-.375l8.45-4.6q.225-.125.462-.188q.238-.062.488-.062t.488.062q.237.063.462.188l9.525 5.2q.25.125.388.362q.137.238.137.513V16q0 .425-.288.712Q22.425 17 22 17t-.712-.288Q21 16.425 21 16v-5.9l-2 1.1V16q0 .575-.275 1.038q-.275.462-.775.737l-5 2.7q-.225.125-.462.188q-.238.062-.488.062Zm0-8.025L18.85 9L12 5.3L5.15 9Zm0 6.025l5-2.7V12.25l-4.025 2.225q-.225.125-.475.187q-.25.063-.5.063t-.5-.063q-.25-.062-.475-.187L7 12.25v3.775Zm0-6.025Zm0 3.025Zm0 0Z"/>
-          </svg>
+          <div :class="`${statusOfMenu ? 'opacity-100 h-36' : 'opacity-0 lg:opacity-100 h-0 lg:h-full'} transition-all duration-500 space-y-4 flex flex-col`">
+            <svg @click="changeNav(1)"
+                 :class="`${currentNav === 1 ? 'text-orange-400' : 'text-gray-400' } mt-3 lg:mt-0 hover:text-orange-400 transition duration-200 cursor-pointer`"
+                 width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                    d="M6 19h3v-6h6v6h3v-9l-6-4.5L6 10Zm0 2q-.825 0-1.412-.587Q4 19.825 4 19v-9q0-.475.213-.9q.212-.425.587-.7l6-4.5q.275-.2.575-.3q.3-.1.625-.1t.625.1q.3.1.575.3l6 4.5q.375.275.588.7q.212.425.212.9v9q0 .825-.587 1.413Q18.825 21 18 21h-5v-6h-2v6Zm6-8.75Z"/>
+            </svg>
+            <svg @click="changeNav(2)"
+                 :class="`${currentNav === 2 ? 'text-orange-400' : 'text-gray-400' } hover:text-orange-400 transition duration-200 cursor-pointer`"
+                 width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                    d="M12 12q-1.65 0-2.825-1.175Q8 9.65 8 8q0-1.65 1.175-2.825Q10.35 4 12 4q1.65 0 2.825 1.175Q16 6.35 16 8q0 1.65-1.175 2.825Q13.65 12 12 12Zm6 8H6q-.825 0-1.412-.587Q4 18.825 4 18v-.8q0-.85.438-1.563q.437-.712 1.162-1.087q1.55-.775 3.15-1.163Q10.35 13 12 13t3.25.387q1.6.388 3.15 1.163q.725.375 1.162 1.087Q20 16.35 20 17.2v.8q0 .825-.587 1.413Q18.825 20 18 20ZM6 18h12v-.8q0-.275-.137-.5q-.138-.225-.363-.35q-1.35-.675-2.725-1.013Q13.4 15 12 15t-2.775.337Q7.85 15.675 6.5 16.35q-.225.125-.362.35q-.138.225-.138.5Zm6-8q.825 0 1.413-.588Q14 8.825 14 8t-.587-1.412Q12.825 6 12 6q-.825 0-1.412.588Q10 7.175 10 8t.588 1.412Q11.175 10 12 10Zm0-2Zm0 10Z"/>
+            </svg>
+            <svg @click="changeNav(3)"
+                 :class="`${currentNav === 3 ? 'text-orange-400' : 'text-gray-400' } hover:text-orange-400 transition duration-200 cursor-pointer`"
+                 width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                    d="M12 20.725q-.25 0-.488-.062q-.237-.063-.462-.188l-5-2.7q-.5-.275-.775-.737Q5 16.575 5 16v-4.8L2.6 9.875q-.275-.15-.4-.375T2.075 9q0-.275.125-.5q.125-.225.4-.375l8.45-4.6q.225-.125.462-.188q.238-.062.488-.062t.488.062q.237.063.462.188l9.525 5.2q.25.125.388.362q.137.238.137.513V16q0 .425-.288.712Q22.425 17 22 17t-.712-.288Q21 16.425 21 16v-5.9l-2 1.1V16q0 .575-.275 1.038q-.275.462-.775.737l-5 2.7q-.225.125-.462.188q-.238.062-.488.062Zm0-8.025L18.85 9L12 5.3L5.15 9Zm0 6.025l5-2.7V12.25l-4.025 2.225q-.225.125-.475.187q-.25.063-.5.063t-.5-.063q-.25-.062-.475-.187L7 12.25v3.775Zm0-6.025Zm0 3.025Zm0 0Z"/>
+            </svg>
+          </div>
           <!--          <svg @click="changeNav(4)" :class="`${currentNav === 4 ? 'text-orange-400' : 'text-gray-400' } hover:text-orange-400 transition duration-200 cursor-pointer`" width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21q-.825 0-1.412-.587Q2 19.825 2 19V8q0-.825.588-1.412Q3.175 6 4 6h4V4q0-.825.588-1.413Q9.175 2 10 2h4q.825 0 1.413.587Q16 3.175 16 4v2h4q.825 0 1.413.588Q22 7.175 22 8v11q0 .825-.587 1.413Q20.825 21 20 21Zm0-2h16V8H4v11Zm6-13h4V4h-4ZM4 19V8v11Z"/></svg>-->
           <!--          <svg @click="changeNav(5)" :class="`${currentNav === 5 ? 'text-orange-400' : 'text-gray-400' } hover:text-orange-400 transition duration-200 cursor-pointer`" width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20Zm8-7L4 8v10h16V8Zm0-2l8-5H4ZM4 8V6v12Z"/></svg>-->
         </div>
@@ -172,6 +176,7 @@ export default {
     },
     changeNav(id) {
       this.currentNav = id;
+      this.statusOfMenu = false;
     }
   }
 }

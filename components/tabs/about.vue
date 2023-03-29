@@ -1,8 +1,8 @@
 <template>
   <div class="scrollbar h-full w-full overflow-y-auto flex-col space-y-10 sm:space-y-20 bg-customGray-default rounded-[2.2rem] p-4 sm:p-8 lg:p-16 py-5 sm:py-4 lg:py-8">
-    <div class="flex flex-col space-y-4 w-full">
+    <div class="flex flex-col w-full">
       <p class="text-white font-bold text-3xl">About <span class="text-orange-500">me</span></p>
-      <div class="flex flex-col lg:flex-row w-full space-y-5 lg:space-y-0 lg:space-x-10">
+      <div class="flex flex-col lg:flex-row w-full space-y-5 lg:space-y-0 lg:space-x-10 mt-6">
         <div class="w-full lg:w-1/2 text-gray-200">
           Augustin is a passionate full stack developer who is enthusiastic about computer science and SaaS. Currently
           in his 5th year of engineering school, he is dedicated to constantly expanding his knowledge and skills in the

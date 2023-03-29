@@ -1,7 +1,10 @@
 <template>
-  <div class="h-full w-full flex justify-center items-center flex-col space-y-4">
-    <p class="text-gray-200 font-bold text-5xl text-center">Augustin Ribreau</p>
-    <p class="text-gray-500 text-lg">{{currentTitle}}</p>
+  <div class="h-full w-full flex justify-center items-center flex-col space-y-20 lg:space-y-0">
+    <img src="../../static/augustinribreau.jpeg" class="block lg:hidden w-60 rounded-full border-2 border-gray-400" alt="">
+    <div class="flex flex-col items-center space-y-4">
+      <p class="text-gray-200 font-bold text-4xl sm:text-5xl text-center">Augustin Ribreau</p>
+      <p class="text-gray-500 text-lg">{{currentTitle}}</p>
+    </div>
   </div>
 </template>
 <script>
