@@ -1,64 +1,298 @@
 <template>
-  <div class="h-screen w-screen bg-customGray-default flex justify-center sm:justify-between flex-col">
-    <div class="hidden sm:block"></div>
-    <div class="w-full flex justify-center items-center flex-col">
-      <img src="../static/augustinribreau.jpeg" class="block w-60 rounded-full" alt="">
-      <div class="flex flex-col items-center space-y-4 mt-6">
-        <p class="text-gray-200 font-bold text-4xl sm:text-5xl text-center">Augustin Ribreau</p>
-        <p class="text-gray-500 text-lg text-center">Full Stack Developer | Junior Hacker | Hard Worker |
-          Scoutmaster</p>
-      </div>
-      <div class="flex flex-row space-x-3 mt-2">
-        <a href="https://www.linkedin.com/in/augustinribreau/" target="_blank">
-          <svg class="text-gray-300 hover:text-orange-400 transition" xmlns="http://www.w3.org/2000/svg"
-               width="20"
-               height="20" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M5.004 7h-.029a2.235 2.235 0 1 1 .057-4.457A2.235 2.235 0 1 1 5.004 7Zm-1.986 3h4v12h-4zm14.5 0a4.473 4.473 0 0 0-3.5 1.703V10h-4v12h4v-5.5a2 2 0 0 1 4 0V22h4v-7.5a4.5 4.5 0 0 0-4.5-4.5Z"/>
-          </svg>
+  <main class="feuille">
+
+    <span class="millesime anno">version 2026, enfin
+      <svg viewBox="0 0 160 52"><path class="trait" style="--l:420" d="M28,8 C80,-4 158,4 152,24 C147,45 60,54 22,44 C-8,36 2,14 44,9"/></svg>
+    </span>
+
+    <figure class="polaroid">
+      <span class="scotch"></span>
+      <img src="/augustin-portrait.jpg" alt="Augustin Ribreau">
+      <figcaption class="legende">moi.</figcaption>
+    </figure>
+
+    <header class="anno">
+      <p class="surtitre">Page relue et corrigée par l'auteur</p>
+      <h1>Augustin Ribreau</h1>
+      <span class="sous-titre">
+        <span class="rature">Développeur Full-Stack
+          <svg viewBox="0 0 300 16" preserveAspectRatio="none"><path class="trait" style="--l:320" d="M2,9 C60,4 120,12 180,7 C230,3 280,10 298,6"/></svg>
+        </span>
+        <span class="correction main">artisan du web</span>
+      </span>
+    </header>
+
+    <p>Je conçois et fabrique des logiciels de bout en bout : le schéma de base de données, l'API, l'interface, le déploiement — et le support quand quelque chose casse. Un seul artisan, pas de couture apparente.</p>
+
+    <p class="anno">Depuis 2016, je construis des produits volontairement petits et <span class="encercle">sérieux<svg viewBox="0 0 140 46"><path class="trait" style="--l:380" d="M22,6 C70,-3 136,4 132,22 C128,41 52,48 18,38 C-8,30 4,12 40,8"/></svg></span><span class="note-marge main" style="right:-72px;top:1.2em">si, si.</span> : des SaaS de niche, faits pour un métier précis, entretenus dans la durée.</p>
+
+    <p>Le reste du temps, je suis scout d'Europe — depuis 2012, chef puis formateur de chefs. Une forêt, de la pluie, vingt garçons : il n'existe pas de meilleure école de gestion de projet.</p>
+
+    <h2>Travaux</h2>
+    <ul class="travaux anno">
+      <li>
+        <a class="ligne" href="https://lingopay.fr" target="_blank" rel="noopener">
+          <span class="nom">LingoPay</span><span class="type">SaaS · en production</span>
+          <span class="desc">La collecte de dons des écoles et des associations : campagnes, catalogue de dons, marque blanche — et le coût réel du don, affiché.</span>
         </a>
-        <a href="mailto:augustin.ribreau@gmail.com" target="_blank">
-          <svg class="text-gray-300 hover:text-orange-400 transition" xmlns="http://www.w3.org/2000/svg"
-               width="20"
-               height="20" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20ZM20 8l-7.475 4.675q-.125.075-.263.112q-.137.038-.262.038t-.262-.038q-.138-.037-.263-.112L4 8v10h16Zm-8 3l8-5H4ZM4 8v.25v-1.475v.025V6v.8v-.013V8.25V8v10Z"/>
-          </svg>
+        <span class="fleche-note">
+          <svg viewBox="0 0 56 30"><path class="trait" style="--l:90" d="M54,26 C40,10 24,6 6,10 M14,4 L5,10 L13,17"/></svg>
+          <span class="main">celui-ci,<br>d'abord !</span>
+        </span>
+      </li>
+      <li>
+        <a class="ligne" href="https://kinepilot.fr" target="_blank" rel="noopener">
+          <span class="nom">KinePilot</span><span class="type">SaaS · en production</span>
+          <span class="desc">Les remplacements des kinésithérapeutes, sans la paperasse : calendrier de disponibilités partageable, contrats conformes à l'Ordre générés automatiquement, rétrocession configurable.</span>
         </a>
-        <a href="https://github.com/augustinRibreau" target="_blank">
-          <svg class="text-gray-300 hover:text-orange-400 transition" xmlns="http://www.w3.org/2000/svg"
-               width="20"
-               height="20" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M20.116 5.901a3.883 3.883 0 0 0-.26-.31a4.413 4.413 0 0 0 .21-.76a5.284 5.284 0 0 0-.35-2.8s-1.12-.35-3.69 1.38a12.477 12.477 0 0 0-3.35-.45a12.604 12.604 0 0 0-3.36.45c-2.57-1.75-3.69-1.38-3.69-1.38a5.263 5.263 0 0 0-.35 2.77a4.21 4.21 0 0 0 .22.79c-.09.1-.18.21-.26.31a5.14 5.14 0 0 0-1.12 3.3a7.686 7.686 0 0 0 .04.85c.32 4.43 3.27 5.46 6.08 5.78a2.558 2.558 0 0 0-.77 1.39a4.022 4.022 0 0 0-.13 1.09v1.31c-1.119.1-2.267-.063-2.623-1.061a5.695 5.695 0 0 0-1.834-2.413a1.179 1.179 0 0 1-.17-.112a1.001 1.001 0 0 0-.93-.645h-.005a1 1 0 0 0-1 .995c-.003.812.81 1.337 1.143 1.515a4.466 4.466 0 0 1 .923 1.359c.364 1.023 1.429 2.578 4.466 2.376l.002.098l.004.268a1 1 0 0 0 1 1h4.714a1 1 0 0 0 1-1s.008-3.16.008-3.69a4.024 4.024 0 0 0-.13-1.09l-.002-.006l.004.006c-.009-.035-.022-.063-.032-.097a2.532 2.532 0 0 0-.74-1.293l.012.021l-.02-.02c2.81-.32 5.74-1.37 6.06-5.78a7.687 7.687 0 0 0 .04-.85a5.23 5.23 0 0 0-1.11-3.3Z"/>
-          </svg>
+      </li>
+      <li>
+        <a class="ligne" href="https://metibat.fr" target="_blank" rel="noopener">
+          <span class="nom">Metibat</span><span class="type">SaaS · en chantier</span>
+          <span class="desc">La gestion des PME du bâtiment (5 à 50 salariés) : chantiers, devis, planning — pour remplacer les bricolages Airtable et le no-code.</span>
         </a>
-        <a href="https://gitlab.com/AugustinRibreau" target="_blank">
-          <svg class="text-gray-300 hover:text-orange-400 transition" xmlns="http://www.w3.org/2000/svg"
-               width="20"
-               height="20" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="m21.94 12.865l-1.066-3.28l.001.005v-.005L18.76 3.076a.833.833 0 0 0-.799-.57a.822.822 0 0 0-.788.575l-2.007 6.178H8.834L6.824 3.08a.822.822 0 0 0-.788-.575H6.03a.839.839 0 0 0-.796.575L3.127 9.584l-.002.006l.001-.005l-1.068 3.28a1.195 1.195 0 0 0 .434 1.34l9.229 6.705l.004.003l.012.008l-.011-.008l.002.001l.001.001a.475.475 0 0 0 .045.028l.006.004l.004.002l.003.001h.002l.006.003l.024.01l.023.01h.001l.004.002l.005.002h.002l.007.002h.002c.011.004.023.006.034.009l.013.003h.002l.005.002l.007.001h.007a.465.465 0 0 0 .066.006h.001a.467.467 0 0 0 .067-.005h.007l.007-.002l.004-.001h.002l.014-.004l.034-.008h.002l.007-.003h.002l.005-.002l.003-.001h.001l.025-.011l.023-.01l.005-.002h.002l.003-.002l.004-.002l.007-.004a.478.478 0 0 0 .044-.027l.004-.003l.005-.003l9.23-6.706a1.195 1.195 0 0 0 .434-1.339Zm-3.973-9.18l1.81 5.574h-3.62Zm1.493 6.516l-.738.947l-5.448 6.98l2.577-7.927Zm-7.91 10.474l.001.004Zm-.827-2.546L4.54 10.2h3.61ZM6.03 3.686l1.813 5.573h-3.62Zm-2.984 9.756a.255.255 0 0 1-.092-.285l.794-2.438l5.822 7.464Zm8.659 7.456l-.006-.005l-.011-.01l-.02-.018l.002.001l.002.002a.478.478 0 0 0 .042.037l.003.002Zm.293-1.894l-1.514-4.665l-1.343-4.138h5.719Zm.31 1.88l-.01.008l-.002.001l-.005.005l-.012.009l.002-.002a.46.46 0 0 0 .043-.036l.001-.002l.002-.002Zm8.643-7.442l-6.523 4.74l5.824-7.463l.791 2.437a.255.255 0 0 1-.092.286Z"/>
-          </svg>
+      </li>
+      <li>
+        <a class="ligne" href="https://scoutlib.com" target="_blank" rel="noopener">
+          <span class="nom">ScoutLib</span><span class="type">Communautaire · gratuit</span>
+          <span class="desc">La bibliothèque vivante des chefs Scouts d'Europe : de quoi préparer réunions, jeux et camps sans réinventer la roue.</span>
         </a>
-        <a href="https://www.instagram.com/augustin.rbr/?hl=fr" target="_blank">
-          <svg class="text-gray-300 hover:text-orange-400 transition" xmlns="http://www.w3.org/2000/svg"
-               width="20"
-               height="20" viewBox="0 0 24 24">
-            <path fill="currentColor"
-                  d="M12 6.865A5.135 5.135 0 1 0 17.135 12A5.135 5.135 0 0 0 12 6.865Zm0 8.469A3.334 3.334 0 1 1 15.334 12A3.333 3.333 0 0 1 12 15.334Z"/>
-            <path fill="currentColor"
-                  d="M21.94 7.877a7.333 7.333 0 0 0-.465-2.427a4.918 4.918 0 0 0-1.153-1.772a4.894 4.894 0 0 0-1.77-1.153a7.323 7.323 0 0 0-2.428-.464C15.058 2.012 14.717 2 12.001 2s-3.057.011-4.123.06a7.333 7.333 0 0 0-2.428.465a4.905 4.905 0 0 0-1.77 1.153A4.886 4.886 0 0 0 2.525 5.45a7.333 7.333 0 0 0-.464 2.427c-.05 1.066-.06 1.407-.06 4.123s.01 3.057.06 4.123a7.334 7.334 0 0 0 .464 2.427a4.888 4.888 0 0 0 1.154 1.772a4.917 4.917 0 0 0 1.771 1.153a7.338 7.338 0 0 0 2.428.464C8.944 21.988 9.285 22 12 22s3.057-.011 4.123-.06a7.333 7.333 0 0 0 2.427-.465a5.113 5.113 0 0 0 2.925-2.925a7.316 7.316 0 0 0 .465-2.427c.048-1.067.06-1.407.06-4.123s-.012-3.057-.06-4.123Zm-1.8 8.164a5.549 5.549 0 0 1-.343 1.857a3.311 3.311 0 0 1-1.898 1.898a5.522 5.522 0 0 1-1.857.344c-1.055.048-1.371.058-4.042.058s-2.986-.01-4.04-.058a5.526 5.526 0 0 1-1.857-.344a3.108 3.108 0 0 1-1.15-.748a3.085 3.085 0 0 1-.748-1.15a5.521 5.521 0 0 1-.344-1.857c-.048-1.054-.058-1.37-.058-4.04s.01-2.987.058-4.042a5.563 5.563 0 0 1 .344-1.857a3.107 3.107 0 0 1 .748-1.15a3.082 3.082 0 0 1 1.15-.748A5.523 5.523 0 0 1 7.96 3.86C9.014 3.81 9.331 3.8 12 3.8s2.987.011 4.042.059a5.564 5.564 0 0 1 1.857.344a3.31 3.31 0 0 1 1.898 1.898a5.523 5.523 0 0 1 .344 1.857c.048 1.055.058 1.37.058 4.041s-.01 2.986-.058 4.041ZM17.339 5.462Z"/>
-          </svg>
+      </li>
+      <li>
+        <a class="ligne" href="https://chronify.fr" target="_blank" rel="noopener">
+          <span class="nom">Chronify</span><span class="type">R&amp;D · matériel</span>
+          <span class="desc">Le chronométrage de courses cyclistes par puces RFID, fait maison — lecteur UHF, FastAPI et classement en direct.</span>
         </a>
-      </div>
+      </li>
+      <li>
+        <a class="ligne" href="https://chagner.fr" target="_blank" rel="noopener">
+          <span class="nom">Sur mesure</span><span class="type">Freelance · Chagner</span>
+          <span class="desc">Missions via ma micro-entreprise : e-commerce et ERP (Odoo, PrestaShop, GCP), back-offices, billetterie, intégrations.</span>
+        </a>
+      </li>
+    </ul>
+
+    <p class="et-aussi anno">Et aussi : la billetterie d'un festival pyromusical familial, un tableau de bord fiscal open source pour freelances, et un nouveau side-project <span class="encercle">chaque mois<svg viewBox="0 0 140 46"><path class="trait" style="--l:380" d="M22,6 C70,-3 136,4 132,22 C128,41 52,48 18,38 C-8,30 4,12 40,8"/></svg></span>.<span class="note-marge main" style="right:-76px;top:.2em">on se soigne.</span></p>
+
+    <div class="contact anno">
+      <p>Un projet, une mission, une question ?
+        <span class="souligne-main"><a href="mailto:contact@augustinribreau.com">contact@augustinribreau.com</a>
+          <svg viewBox="0 0 300 16" preserveAspectRatio="none">
+            <path class="trait" style="--l:320" d="M2,4 C70,9 180,2 298,7"/>
+            <path class="trait t2" style="--l:320" d="M6,11 C90,14 200,8 294,12"/>
+          </svg>
+        </span>
+        <span class="reponds main">→ je réponds vite</span>
+      </p>
     </div>
-    <div class="hidden md:block text-xs text-gray-400 font-light text-center mb-1">© Since 2016 - Augustin Ribreau</div>
-  </div>
+
+    <div class="liens">
+      <a href="https://github.com/augustinRibreau" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://gitlab.com/AugustinRibreau" target="_blank" rel="noopener">GitLab</a>
+      <a href="https://www.linkedin.com/in/augustinribreau/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/augustin.rbr/" target="_blank" rel="noopener">Instagram</a>
+      <span style="margin-left:auto">© depuis 2016</span>
+    </div>
+  </main>
 </template>
 
 <script>
 export default {
   name: 'Home',
+  mounted() {
+    // les annotations se dessinent quand elles entrent à l'écran
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('vu'); io.unobserve(e.target); }
+    }), { threshold: .4 });
+    this.$el.querySelectorAll('.anno').forEach(el => io.observe(el));
+  },
 }
 </script>
+
+<style>
+  :root{
+    --bureau:#e5e2da;
+    --papier:#fdfcf9;
+    --encre:#22211e;
+    --gris:#8b867c;
+    --stylo:#d0321d;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--bureau);
+    color:var(--encre);
+    font-family:'Source Serif 4',serif;
+    font-size:17.5px;line-height:1.68;font-weight:380;
+    padding:clamp(20px,5vh,72px) clamp(12px,3vw,40px) clamp(50px,8vh,100px);
+    -webkit-font-smoothing:antialiased;
+  }
+  .feuille{
+    position:relative;
+    max-width:740px;margin:0 auto;
+    background:var(--papier);
+    padding:clamp(40px,7vw,84px) clamp(26px,6vw,76px) clamp(48px,7vw,80px);
+    box-shadow:0 1px 2px rgba(30,28,20,.12),0 14px 44px rgba(30,28,20,.16);
+  }
+  /* écriture manuscrite */
+  .main{
+    font-family:'Caveat',cursive;font-weight:600;color:var(--stylo);
+    line-height:1.1;letter-spacing:.01em;
+    rotate:-2.5deg;display:inline-block;
+  }
+
+  header{margin-bottom:2.4em;position:relative}
+  .surtitre{
+    font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gris);
+    margin-bottom:14px;
+  }
+  h1{
+    font-weight:640;font-size:clamp(34px,6vw,52px);line-height:1.05;letter-spacing:-.015em;
+    margin-bottom:.35em;
+  }
+  .sous-titre{
+    font-size:clamp(18px,2.6vw,23px);color:var(--gris);font-weight:380;
+    position:relative;display:inline-block;
+  }
+  /* rature sur "Développeur Full-Stack" */
+  .rature{position:relative;white-space:nowrap}
+  .rature svg{
+    position:absolute;left:-2%;top:38%;width:104%;height:16px;overflow:visible;pointer-events:none;
+  }
+  .correction{
+    position:absolute;top:-.15em;left:calc(100% + 16px);font-size:1.55em;white-space:nowrap;
+  }
+  @media(max-width:700px){.correction{position:static;margin-left:12px}}
+  .anno{position:relative}
+  /* mention v2026 encerclée, coin haut droit */
+  .millesime{
+    position:absolute;top:-14px;right:-6px;
+    font-family:'Caveat',cursive;font-weight:600;color:var(--stylo);
+    font-size:21px;rotate:6deg;padding:10px 14px;
+  }
+  .millesime svg{position:absolute;inset:-6px;width:calc(100% + 12px);height:calc(100% + 12px);overflow:visible;pointer-events:none}
+  @media(max-width:700px){.millesime{right:6px;top:-10px;font-size:18px}}
+
+  /* polaroïd scotché */
+  .polaroid{
+    position:absolute;top:clamp(90px,16vw,150px);right:clamp(-14px,-1vw,10px);
+    width:clamp(96px,14vw,150px);
+    background:#fff;padding:7px 7px 26px;
+    box-shadow:0 6px 18px rgba(30,28,20,.25);
+    rotate:5deg;
+    transform-origin:50% -8px;
+    animation:balance 7s ease-in-out infinite;
+  }
+  @keyframes balance{
+    0%,100%{rotate:5deg}
+    50%{rotate:3.2deg}
+  }
+  .polaroid:hover{animation-play-state:paused}
+  .polaroid img{width:100%;aspect-ratio:1/1.08;object-fit:cover;display:block;filter:saturate(.85)}
+  .polaroid .legende{
+    position:absolute;bottom:2px;left:0;right:0;text-align:center;
+    font-family:'Caveat',cursive;font-size:17px;color:#4a4740;rotate:-1deg;
+  }
+  .polaroid .scotch{
+    position:absolute;top:-10px;left:50%;translate:-50% 0;rotate:-4deg;
+    width:64px;height:22px;background:rgba(228,220,180,.55);
+    box-shadow:0 1px 3px rgba(0,0,0,.08);
+  }
+  @media(max-width:700px){.polaroid{position:static;rotate:-3deg;margin:10px 0 20px}}
+
+  h2{
+    font-weight:640;font-size:clamp(21px,3vw,26px);margin:2em 0 .8em;
+    letter-spacing:-.01em;
+  }
+  p{margin-bottom:1.05em;text-wrap:pretty;max-width:58ch}
+  p a,li a{color:var(--encre);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em}
+  p a:hover,li a:hover{color:var(--stylo)}
+
+  /* mot encerclé + note en marge */
+  .encercle{position:relative;white-space:nowrap}
+  .encercle svg{position:absolute;left:-9%;top:-22%;width:118%;height:150%;overflow:visible;pointer-events:none}
+  .note-marge{
+    position:absolute;font-size:1.35em;white-space:nowrap;
+  }
+  @media(max-width:700px){.note-marge{display:none}}
+
+  /* liste des travaux */
+  .travaux{list-style:none;margin:0 0 1em;display:flex;flex-direction:column}
+  .travaux li{
+    border-bottom:1px solid #e7e3d8;position:relative;
+  }
+  .travaux li:first-child{border-top:1px solid #e7e3d8}
+  .travaux a.ligne{
+    display:grid;grid-template-columns:1fr auto;gap:4px 18px;align-items:baseline;
+    padding:14px 2px;color:inherit;text-decoration:none;
+  }
+  .travaux .nom{font-weight:600;font-size:1.12em}
+  .travaux .type{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gris);white-space:nowrap}
+  .travaux .desc{grid-column:1/-1;color:#57534a;font-size:.94em;max-width:56ch}
+  /* annotation flèche lingopay */
+  .fleche-note{
+    position:absolute;right:-64px;top:34px;width:130px;
+    font-size:1.15em;line-height:1.05;text-align:left;rotate:3deg;
+  }
+  .fleche-note svg{width:44px;height:24px;overflow:visible;display:block;margin-bottom:1px;margin-left:-6px}
+  @media(max-width:900px){.fleche-note{display:none}}
+
+  .et-aussi{
+    margin-top:1.3em;font-size:.92em;color:#57534a;font-style:italic;max-width:56ch;
+  }
+
+  /* contact : email souligné à la main */
+  .contact{margin-top:2.2em;position:relative}
+  .souligne-main{position:relative;font-weight:600;white-space:nowrap}
+  .souligne-main svg{position:absolute;left:-1%;bottom:-12px;width:102%;height:16px;overflow:visible;pointer-events:none}
+  .reponds{position:absolute;font-size:1.35em;rotate:-2deg;margin-top:6px}
+  @media(max-width:700px){.reponds{position:static;display:inline-block;margin-left:8px}}
+
+  .liens{margin-top:2.6em;padding-top:1.2em;border-top:1px solid #e7e3d8;
+    font-size:.85em;color:var(--gris);display:flex;gap:18px;flex-wrap:wrap}
+  .liens a{color:var(--gris)}
+  .liens a:hover{color:var(--stylo)}
+
+  /* traits stylo : dessin progressif */
+  .trait{stroke:var(--stylo);stroke-width:2.5;fill:none;stroke-linecap:round;
+    stroke-dasharray:var(--l,300);stroke-dashoffset:var(--l,300);
+  }
+  .vu .trait{animation:dessine .55s ease-out forwards}
+  .vu .trait.t2{animation-delay:.25s}
+  @keyframes dessine{to{stroke-dashoffset:0}}
+  /* le correcteur repasse son stylo de temps en temps */
+  .vu .encercle .trait,
+  .millesime.vu .trait,
+  .vu .fleche-note .trait{animation:reencre 9s ease-in-out infinite}
+  @keyframes reencre{
+    0%{stroke-dashoffset:var(--l,300)}
+    7%{stroke-dashoffset:0}
+    91%{stroke-dashoffset:0}
+    100%{stroke-dashoffset:var(--l,300)}
+  }
+  /* le badge gigote de temps en temps */
+  .millesime.vu{animation:gigote 6s ease-in-out infinite}
+  @keyframes gigote{
+    0%,90%,100%{rotate:6deg}
+    93%{rotate:8.5deg}
+    96%{rotate:4.5deg}
+  }
+  /* la flèche « je réponds vite » pulse doucement */
+  .vu .reponds{animation:pousse 2.6s ease-in-out infinite}
+  @keyframes pousse{
+    0%,100%{translate:0 0}
+    50%{translate:5px 0}
+  }
+  /* soulignement manuscrit au survol des projets */
+  .travaux li:hover .nom{
+    text-decoration:underline wavy var(--stylo) 1.5px;
+    text-underline-offset:7px;
+  }
+  .travaux li:hover .type{color:var(--stylo)}
+  .main,.note-marge,.correction,.millesime,.fleche-note,.reponds{opacity:0;transition:opacity .4s ease .3s}
+  .vu .main,.vu .note-marge,.vu .correction,.vu .millesime,.vu .fleche-note,.vu .reponds,
+  .millesime.vu,.correction.vu{opacity:1}
+  @media(prefers-reduced-motion:reduce){
+    .trait{stroke-dashoffset:0!important;animation:none!important}
+    .main,.note-marge,.correction,.millesime,.fleche-note,.reponds{opacity:1;transition:none}
+  }
+</style>

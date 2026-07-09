@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Playwright MCP artifacts
+.playwright-mcp
