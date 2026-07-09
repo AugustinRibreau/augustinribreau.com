@@ -15,7 +15,7 @@
       <p class="surtitre">Page relue et corrigée par l'auteur</p>
       <h1>Augustin Ribreau</h1>
       <span class="sous-titre">
-        <span class="rature">Développeur Full-Stack
+        <span class="rature">Ingénieur Full Stack 360°
           <svg viewBox="0 0 300 16" preserveAspectRatio="none"><path class="trait" style="--l:320" d="M2,9 C60,4 120,12 180,7 C230,3 280,10 298,6"/></svg>
         </span>
         <span class="correction main">artisan du web</span>
