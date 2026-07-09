@@ -22,18 +22,18 @@
       </span>
     </header>
 
-    <p>Je conçois et fabrique des logiciels de bout en bout : le schéma de base de données, l'API, l'interface, le déploiement — et le support quand quelque chose casse. Un seul artisan, pas de couture apparente.</p>
+    <p>Je conçois et fabrique des logiciels de bout en bout : le schéma de base de données, l'API, l'interface, le déploiement, et le support quand quelque chose casse. Un seul artisan, pas de couture apparente.</p>
 
     <p class="anno">Depuis 2016, je construis des produits volontairement petits et <span class="encercle">sérieux<svg viewBox="0 0 140 46"><path class="trait" style="--l:380" d="M22,6 C70,-3 136,4 132,22 C128,41 52,48 18,38 C-8,30 4,12 40,8"/></svg></span><span class="note-marge main" style="right:-72px;top:1.2em">si, si.</span> : des SaaS de niche, faits pour un métier précis, entretenus dans la durée.</p>
 
-    <p>Le reste du temps, je suis scout d'Europe — depuis 2012, chef puis formateur de chefs. Une forêt, de la pluie, vingt garçons : il n'existe pas de meilleure école de gestion de projet.</p>
+    <p>Le reste du temps, je suis scout d'Europe : depuis 2012, chef puis formateur de chefs. Une forêt, de la pluie, vingt garçons : il n'existe pas de meilleure école de gestion de projet.</p>
 
     <h2>Travaux</h2>
     <ul class="travaux anno">
       <li>
         <a class="ligne" href="https://lingopay.fr" target="_blank" rel="noopener">
           <span class="nom">LingoPay</span><span class="type">SaaS · en production</span>
-          <span class="desc">La collecte de dons des écoles et des associations : campagnes, catalogue de dons, marque blanche — et le coût réel du don, affiché.</span>
+          <span class="desc">La collecte de dons des écoles et des associations : campagnes, catalogue de dons, marque blanche, et le coût réel du don, affiché.</span>
         </a>
         <span class="fleche-note">
           <svg viewBox="0 0 56 30"><path class="trait" style="--l:90" d="M54,26 C40,10 24,6 6,10 M14,4 L5,10 L13,17"/></svg>
@@ -49,7 +49,7 @@
       <li>
         <a class="ligne" href="https://metibat.fr" target="_blank" rel="noopener">
           <span class="nom">Metibat</span><span class="type">SaaS · en chantier</span>
-          <span class="desc">La gestion des PME du bâtiment (5 à 50 salariés) : chantiers, devis, planning — pour remplacer les bricolages Airtable et le no-code.</span>
+          <span class="desc">La gestion des PME du bâtiment (5 à 50 salariés) : chantiers, devis, planning, pour remplacer les bricolages Airtable et le no-code.</span>
         </a>
       </li>
       <li>
@@ -61,7 +61,7 @@
       <li>
         <a class="ligne" href="https://chronify.fr" target="_blank" rel="noopener">
           <span class="nom">Chronify</span><span class="type">R&amp;D · matériel</span>
-          <span class="desc">Le chronométrage de courses cyclistes par puces RFID, fait maison — lecteur UHF, FastAPI et classement en direct.</span>
+          <span class="desc">Le chronométrage de courses cyclistes par puces RFID, fait maison : lecteur UHF, FastAPI et classement en direct.</span>
         </a>
       </li>
       <li>

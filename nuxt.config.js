@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Augustin Ribreau · Ingénieur Full Stack 360° — freelance',
+    title: 'Augustin Ribreau · Ingénieur Full Stack 360° · freelance',
     htmlAttrs: {
       lang: 'fr'
     },
